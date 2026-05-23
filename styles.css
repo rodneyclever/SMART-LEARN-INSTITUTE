@@ -1,0 +1,158 @@
+*{
+ margin:0;
+padding:0;
+ box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+ }
+ body{
+height:100vh;
+ display:flex;
+ justify-content:center;
+  align-items:center;
+   background-color: #435165;
+ }
+
+.container{
+width:1000px;
+height:580px;
+background:#4b69a9;
+  position:relative;
+  overflow:hidden;
+ display:flex;
+}
+
+
+/* LEFT SIDE */
+ .left{
+width:50%;
+ padding:60px 40px;
+ color:white;
+position:relative;
+ }
+
+.left::before{
+content:"";
+position:absolute;
+ top:0;
+  left:0;
+  width:100%;
+ height:100%;
+ background:
+
+ linear-gradient(135deg, rgba(255,255,255,0.03) 25%, transparent 25%) -50px 0,
+ linear-gradient(225deg, rgba(255,255,255,0.03) 25%, transparent 25%) -50px 0,
+linear-gradient(315deg, rgba(255,255,255,0.03) 25%, transparent 25%),
+ linear-gradient(45deg, rgba(255,255,255,0.03) 25%, transparent 25%);
+ background-size:100px 100px;
+opacity:.5;
+ }
+
+ .lock-circle{
+ width:70px;
+ height:70px;
+ background:#27457c;
+  border-radius:50%;
+  display:flex;
+ justify-content:center;
+ align-items:center;
+position:relative;
+ z-index:1;
+margin-bottom:20px;
+ }
+
+
+.lock-circle i{
+ font-size:28px;
+color:white;
+ }
+
+
+.title{
+   font-size:25px;
+font-weight:bold;
+position:relative;
+ z-index:1;
+ margin-bottom:70px;
+}
+
+.subtitle{
+font-size:18px;
+ color:#dfe7ff;
+ position:relative;
+z-index:1;
+ }
+
+
+ .hashtags{
+ position:absolute;
+ bottom:40px;
+left:40px;
+ color:#d2d9ef;
+font-size:16px;
+ z-index:1;
+ }
+
+/* RIGHT SIDE */
+.right{
+  width:50%;
+display:flex;
+ justify-content:center;
+ align-items:center;
+ position:relative;
+}
+
+ .register-box{
+ width:380px;
+ background:white;
+ box-shadow:0 5px 15px rgba(0,0,0,0.2);
+ }
+
+.register-header{
+ text-align:center;
+ padding:28px;
+ font-size:22px;
+ font-weight:bold;
+ color:#444;
+ border-bottom:1px solid #ddd;
+}
+
+.input-group{
+ display:flex;
+ margin:24px;
+border:1px solid #ddd;
+ height:55px;
+ }
+
+ .icon{
+ width:55px;
+ background:#2f73db;
+ color:white;
+   display:flex;
+justify-content:center;
+ align-items:center;
+ font-size:18px;
+}
+
+.input-group input{
+flex:1;
+ border:none;
+ outline:none;
+ padding:0 15px;
+font-size:16px;
+}
+
+.register-btn{
+width:100%;
+ height:55px;
+ border:none;
+ background:#2f73db;
+ color:white;
+ font-size:20px;
+font-weight:bold;
+ cursor:pointer;
+transition:.3s;
+ }
+
+ .register-btn:hover{
+ background:#1f5ec0;
+  }

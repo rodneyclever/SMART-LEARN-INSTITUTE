@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Secure Registration system</title>
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <link href="styles.css" rel="stylesheet" type="text/css">
+
+  
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- LEFT -->
+    <div class="left">
+
+      <div class="lock-circle">
+        <i class="fa-solid fa-lock"></i>
+      </div>
+
+      <div class="title">
+        SECURE REGISTRATION SYSTEM
+      </div>
+
+      <div class="subtitle">
+        Secure Registration system by Kasule John Reagan
+      </div>
+
+      <div class="hashtags">
+       #secureregistration #php #mysql
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+
+      <div class="register-box">
+
+        <div class="register-header">Register</div>
+        <form action="register.php" method="post" autocomplete="off">
+        <div class="input-group">
+          <div class="icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+
+          <input type="text"  name = "username" placeholder="Username" id = "username"  required>
+        </div>
+
+        <div class="input-group">
+          <div class="icon">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+
+          <input type="password"  name = "password" placeholder="Password" id = "password" required>
+        </div>
+
+        <div class = "input-group"> 
+         <div class = "icon">   
+            <i class ="fa-solid fa-envelope"></i>
+         </div>
+
+         <input type="email" name = "email" placeholder="email" id="email" required>
+        </div>
+
+        <button class="register-btn">Register</button>
+         </form>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
